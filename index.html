@@ -9,10 +9,26 @@
         .card { background: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; }
         h1 { font-size: 24px; margin-bottom: 10px; color: #111; }
-        p { color: #666; font-size: 16px; line-height: 1.5; margin-bottom: 25px; }
-        .btn { display: inline-block; background-color: #2da44e; color: white; text-decoration: none; padding: 14px 28px; font-weight: bold; border-radius: 6px; font-size: 16px; transition: background 0.2s; }
-        .btn:hover { background-color: #2c974b; }
+        p { color: #666; font-size: 16px; line-height: 1.5; margin-bottom: 30px; }
+        
+        /* Layout for the structured steps */
+        .step-container { display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; }
+        .step-badge { font-size: 12px; text-transform: uppercase; font-weight: bold; color: #888; letter-spacing: 1px; margin-bottom: 6px; }
+        
+        /* Base button design */
+        .btn { display: block; width: 80%; text-decoration: none; padding: 14px 0; font-weight: bold; border-radius: 6px; font-size: 16px; transition: background 0.2s; color: white; text-align: center; }
+        
+        /* Button color variations */
+        .btn-group { background-color: #0056b3; } /* Google Blue */
+        .btn-group:hover { background-color: #004085; }
+        
+        .btn-web { background-color: #2da44e; } /* GitHub Green */
+        .btn-web:hover { background-color: #2c974b; }
+        
+        .btn-android { background-color: #01875f; } /* Google Play Mint */
+        .btn-android:hover { background-color: #006648; }
     </style>
+
 </head>
 <body>
 
@@ -21,11 +37,26 @@
         <img src="graphic.png" alt="App Preview Graphic">
         
         <h1>Become a Beta Tester!</h1>
-        <p>Thank you for checking out my Todo List app from Reddit. Your feedback helps me reach the Google Play Store!</p>
+        <p>Thank you for checking out Simply Do from Reddit! Please follow the steps below to join our closed test.</p>
         
-        <!-- PASTE YOUR GOOGLE PLAY CLOSED TESTING LINK HERE -->
-        <a href="https://google.com" class="btn" target="_blank">Download on Google Play</a>
-    </div>
+        <!-- Step 1: Join the Group (Blue Button) -->
+        <div class="step-container">
+            <span class="step-badge">Step 1</span>
+            <a href="https://groups.google.com/g/simply-do-testers" class="btn btn-group" target="_blank">Join Google Group</a>
+        </div>
+
+        <!-- Step 2 (Option A): Download via Web (Green Button) -->
+        <div class="step-container">
+            <span class="step-badge">Step 2 (PC / Mac)</span>
+            <a href="https://play.google.com/apps/testing/com.aistudio.todolist.xkfywi" class="btn btn-web" target="_blank">Join on the Web</a>
+        </div>
+
+        <!-- Step 2 (Option B): Download via Android (Google Play Store Color) -->
+        <div class="step-container">
+            <span class="step-badge">Step 2 (Android)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.aistudio.todolist.xkfywi" class="btn btn-android" target="_blank">Download on Google Play</a>
+        </div>
+
 
 </body>
 </html>
