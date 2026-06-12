@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Todo List App Beta</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f7f6; color: #333; text-align: center; padding: 40px 20px; }
+        .card { background: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; }
+        h1 { font-size: 24px; margin-bottom: 10px; color: #111; }
+        p { color: #666; font-size: 16px; line-height: 1.5; margin-bottom: 25px; }
+        .btn { display: inline-block; background-color: #2da44e; color: white; text-decoration: none; padding: 14px 28px; font-weight: bold; border-radius: 6px; font-size: 16px; transition: background 0.2s; }
+        .btn:hover { background-color: #2c974b; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Replace graphic.png with your image filename later -->
+        <img src="graphic.png" alt="App Preview Graphic">
+        
+        <h1>Become a Beta Tester!</h1>
+        <p>Thank you for checking out my Todo List app from Reddit. Your feedback helps me reach the Google Play Store!</p>
+        
+        <!-- PASTE YOUR GOOGLE PLAY CLOSED TESTING LINK HERE -->
+        <a href="https://google.com" class="btn" target="_blank">Download on Google Play</a>
+    </div>
+
+</body>
+</html>
