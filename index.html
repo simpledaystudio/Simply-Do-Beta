@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join the Todo List App Beta</title>
+    <title>Join the Simply Do Beta</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f7f6; color: #333; text-align: center; padding: 40px 20px; }
         .card { background: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
@@ -16,7 +16,7 @@
         .step-badge { font-size: 12px; text-transform: uppercase; font-weight: bold; color: #888; letter-spacing: 1px; margin-bottom: 6px; }
         
         /* Base button design */
-        .btn { display: block; width: 80%; text-decoration: none; padding: 14px 0; font-weight: bold; border-radius: 6px; font-size: 16px; transition: background 0.2s; color: white; text-align: center; }
+        .btn { display: block; width: 80%; text-decoration: none; padding: 14px 0; font-weight: bold; border-radius: 6px; font-size: 16px; transition: background 0.2s; color: white; text-align: center; border: none; cursor: pointer; }
         
         /* Button color variations */
         .btn-group { background-color: #0056b3; } /* Google Blue */
@@ -27,36 +27,46 @@
         
         .btn-android { background-color: #01875f; } /* Google Play Mint */
         .btn-android:hover { background-color: #006648; }
-    </style>
 
+        .btn-about { background-color: #111111; color: #ffffff; margin-top: 10px; } /* Sleek Black */
+        .btn-about:hover { background-color: #333333; }
+
+        /* Description container for the About section */
+        .about-text { max-width: 80%; margin: 15px auto 0 auto; color: #666; font-size: 14px; line-height: 1.6; text-align: center; }
+    </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- Replace graphic.png with your image filename later -->
         <img src="graphic.png" alt="App Preview Graphic">
         
         <h1>Become a Beta Tester!</h1>
         <p>Thank you for checking out Simply Do from Reddit! Please follow the steps below to join our closed test.</p>
         
-        <!-- Step 1: Join the Group (Blue Button) -->
         <div class="step-container">
             <span class="step-badge">Step 1</span>
             <a href="https://groups.google.com/g/simply-do-testers" class="btn btn-group" target="_blank">Join Google Group</a>
         </div>
 
-        <!-- Step 2 (Option A): Download via Web (Green Button) -->
         <div class="step-container">
             <span class="step-badge">Step 2</span>
             <a href="https://play.google.com/apps/testing/com.aistudio.todolist.xkfywi" class="btn btn-web" target="_blank">Join on the Web</a>
         </div>
 
-        <!-- Step 2 (Option B): Download via Android (Google Play Store Color) -->
         <div class="step-container">
             <span class="step-badge">Step 3</span>
             <a href="https://play.google.com/store/apps/details?id=com.aistudio.todolist.xkfywi" class="btn btn-android" target="_blank">Download on Google Play</a>
         </div>
 
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0 20px 0;">
+
+        <div class="step-container">
+            <div class="btn btn-about" style="pointer-events: none;">About Simply Do</div>
+            <p class="about-text">
+                Simply Do is a lightweight, easy-to-use task list designed specifically for Android. Built with a focus on simplicity, it securely stores your tasks locally on your device—keeping your data entirely your own, lightning-fast, and completely accessible offline. ✔️
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
